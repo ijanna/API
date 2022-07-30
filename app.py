@@ -1,11 +1,16 @@
 from flask import Flask, request, jsonify, render_template
-import werkzeug
 import cv2
-import matplotlib.pyplot as plt
 from deepface import DeepFace
 import numpy as np
 import pickle
-import sklearn
+#Load libraries for data processing
+import pandas as pd 
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.pipeline import Pipeline
+from sklearn.svm import SVC
 
 app = Flask(__name__)
 
