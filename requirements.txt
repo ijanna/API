@@ -4,3 +4,4 @@ numpy==1.22.2
 opencv-python-headless==4.6.0.66
 pandas==1.4.3
 scikit_learn==1.1.1
+tensorflow-cpu>=1.9.0
